@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/05/2023 às 00:09
+-- Tempo de geração: 28/08/2024 às 02:24
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -46,8 +46,7 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `nome`, `endereco1`, `fone`, `carro`, `modelo`, `ano`, `placa`, `km`, `datacliente`, `obs`) VALUES
-(80, 'Daniel', 'Acesso Terra Nova, 601. Casa, 157. Terra Nova. Alvorada.', '(51) 99156-3661', 'Voyage', 'City', 2009, 'IPS5B20', 1000, '2023-05-29', 'Adicionado hoje.'),
-(81, 'Ruleni Aragon', 'Acesso Terra Nova, 601. Casa, 157. Terra Nova. Alvorada.', '(51) 99999-9999', 'Polo', 'Track', 2023, 'xyz1234', 0, '2023-05-29', 'Adicionado hoje.');
+(80, 'Daniel', 'Acesso Terra Nova, 601. Casa, 157. Terra Nova. Alvorada.', '(51) 99156-3661', 'Voyage', 'City', 2009, 'IPS5B20', 1000, '2023-05-29', 'Adicionado hoje.');
 
 -- --------------------------------------------------------
 
@@ -93,8 +92,7 @@ CREATE TABLE `notaservico` (
 --
 
 INSERT INTO `notaservico` (`id`, `data_nota`, `descricao`, `qntde1`, `descr1`, `val1`, `qntde2`, `descr2`, `val2`, `qntde3`, `descr3`, `val3`, `qntde4`, `descr4`, `val4`, `qntde5`, `descr5`, `val5`, `qntde6`, `descr6`, `val6`, `qntde7`, `descr7`, `val7`, `qntde8`, `descr8`, `val8`, `maodeobra`, `totalvalores`, `id_client`) VALUES
-(75, '2023-05-29', 'Troca de óleo', 4, 'Óleo', 99, 1, 'Filtro', 50, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 100, 546, 80),
-(76, '2023-05-29', 'Revisão', 1, 'revisão', 300, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 300, 600, 81);
+(139, '2023-10-31', 'Teste', 3, 'Óleo XYZ', 45, 1, 'Filtro óleo', 15, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 150, 300, 80);
 
 -- --------------------------------------------------------
 
@@ -115,7 +113,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `usuario`, `senha`) VALUES
 (1, 'admin', '240248'),
 (2, 'dbuarque', '240248'),
-(3, 'guilherme', '123456');
+(3, 'guilherme', '2024@G4c');
 
 --
 -- Índices para tabelas despejadas
@@ -148,13 +146,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT de tabela `notaservico`
 --
 ALTER TABLE `notaservico`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
